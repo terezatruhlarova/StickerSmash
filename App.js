@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.container3}>Čau!</Text>
+      <Text style={styles.container3}>Nefungovalo mi to u mě na počítači proto vám ukážu jen tohle</Text>
+      <Image style={styles.container2} source={require('./Img/popis-dinosauru.png')}>
+      </Image>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +16,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#EAC9FD',
     alignItems: 'center',
     justifyContent: 'center',
+
   },
+  container2: {
+    marginTop: 100,
+    width: 200,
+    height: 300,
+    borderColor: '#000000',
+    borderWidth: 6
+    
+  },
+  container3: {
+    fontSize: 22
+
+  }
 });
+
+
