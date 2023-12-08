@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.container3}>Čau!</Text>
+      <Text style={styles.container3}>Čau</Text>
       <Text style={styles.container3}>Nefungovalo mi to u mě na počítači proto vám ukážu jen tohle</Text>
       <Image style={styles.container2} source={require('./Img/popis-dinosauru.png')}>
       </Image>
@@ -16,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#EAC9FD',
+    backgroundColor: '#F0E5E3',
     alignItems: 'center',
     justifyContent: 'center',
 
